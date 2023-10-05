@@ -1,0 +1,35 @@
+@import '../../styles/base/vars';
+
+.container {
+  display: flex;
+  column-gap: 12px;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 46px;
+  cursor: pointer;
+  .icon {
+    svg {
+      stroke: $Primary-light;
+    }
+  }
+  .text {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0.1px;
+    color: $Primary-light;
+    display: none;
+  }
+}
+.active {
+  background-color: $Primary;
+  .text {
+    color: $Neutral-dark;
+    display: block;
+  }
+  .icon {
+    svg {
+      stroke: $Neutral-dark;
+    }
+  }
+}

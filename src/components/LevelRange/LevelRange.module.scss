@@ -1,0 +1,44 @@
+@import '../../styles/base/vars';
+
+.levelRange {
+  display: flex;
+  align-items: center;
+  .levelBlock {
+    color: $Neutral-dark;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    background-color: $Primary;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  .rangeBlock {
+    width: 175px;
+    height: 18px;
+    border-radius: 0 4px 4px 0;
+    border-top: 1px solid $Primary;
+    border-bottom: 1px solid $Primary;
+    border-right: 1px solid $Primary;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    .rangeText {
+      position: absolute;
+      left: 4px;
+      top: 3px;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: -0.408px;
+    }
+    .left {
+      background-color: $Primary;
+      height: 16px;
+    }
+    .right {
+      background-color: $Primary-Dark;
+      height: 16px;
+    }
+  }
+}

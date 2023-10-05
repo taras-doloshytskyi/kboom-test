@@ -1,0 +1,32 @@
+.allInfoDiv {
+  min-height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  position: relative;
+  padding: 28px 10px 0 10px;
+  &:after, &:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    background-color: #587481;
+    top: 0;
+  }
+  &:after {
+    right: 0;
+  }
+  &:before {
+    left: 0;
+  }
+  .teamLogoName {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    font-weight: 500;
+    .logoImg {
+      width: 48px;
+      height: 48px;
+    }
+  }
+}

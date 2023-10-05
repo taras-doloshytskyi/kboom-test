@@ -1,0 +1,27 @@
+.header {
+  position: relative;
+  padding: 12px 0 16px;
+  &:after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: #587481;
+    bottom: 0;
+    left: 0;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 122px;
+    svg {
+      cursor: pointer;
+    }
+  }
+  .socialBlock {
+    display: flex;
+    column-gap: 16px;
+    align-items: center;
+  }
+}
